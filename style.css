@@ -1,0 +1,77 @@
+/* [AULA 3] Botão verde para ir às músicas do artista */
+.btn-music {
+    background: var(--green);
+    color: #fff;
+}
+
+.btn-music:hover {
+    background: #219a52;
+}
+
+/* [AULA 3] Subtítulo das tabelas dos cadastros */
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin: 2rem 0 1rem; /* 2rem em cima, 0 nos lados, 1rem embaixo */
+}
+
+/* [AULA 3] Campo de upload de arquivo */
+input[type="file"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1.5px dashed var(--border);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+/* [AULA 3] Texto de ajuda pequeno embaixo do campo */
+small {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* [AULA 3] Grid do formulário em 2 colunas */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2rem;
+}
+
+/* [AULA 3] Área dos botões de ação do formulário */
+.form-actions {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    grid-column: 1 / -1;
+}
+
+/* [AULA 3] Exibição da foto salva na edição */
+.current-image {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+    background: var(--bg);
+    border-radius: 6px;
+}
+
+.current-image img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.current-image small {
+    margin: 0;
+    color: var(--text-muted);
+}
